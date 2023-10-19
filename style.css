@@ -99,7 +99,7 @@ input[type="submit"]{
     outline: none;
 }
 input[type="submit"]:hover{
-    background: azure;
+    background: white;
     color: #d97243;
     transition: .3s;
 }
