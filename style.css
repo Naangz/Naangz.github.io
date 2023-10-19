@@ -64,13 +64,13 @@ form .txt_field{
     left: 0%;
     width: 0%;
     height: 1px;
-    background: #4deab3;
+    background: #c55f2e;
     transition: 0.3s;
 }
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label{
     top: -5px;
-    color: #4deab3;
+    color: #c55f2e;
 }
 .txt_field input:focus ~ span::before,
 .txt_field input:valid ~ span::before{
@@ -90,7 +90,7 @@ input[type="submit"]{
     width: 100%;
     height: 50px;
     border: 1px solid;
-    background: #48dfaa;
+    background: #d97243;
     border-radius: 25px;
     font-size: 18px;
     color: azure;
@@ -100,7 +100,7 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
     background: azure;
-    color: #48dfaa;
+    color: #d97243;
     transition: .3s;
 }
 .buy_token{
@@ -111,7 +111,7 @@ input[type="submit"]:hover{
 }
 .buy_token a{
     text-decoration: none;
-    color: rgb(2, 187, 187);
+    color: rgb(187, 2, 2);
 }
 .buy_token a:hover{
     font-weight: 600;
