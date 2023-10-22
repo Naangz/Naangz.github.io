@@ -3,11 +3,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE-Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    html {
-      scroll-behavior: smooth;
-    }
-</style>
 <title>MyIsekai Landing page</title>
 <link rel="stylesheet" href="aiostyle.css">
     </head>
@@ -28,7 +23,6 @@
                                 
                             </ul>
                         </nav>
-                        
                     </div>
                     <div class="row">
                         <div class="col">
@@ -49,9 +43,8 @@
                         <div class="about-text">
                             <h1>Tentang Kami</h1>
                             <h5>MyIsekai Internet Access</h5>
-                            <p>MyIsekai berkomitmen untuk memberikan pelayanan yang terbaik kepada pelanggan. Kami selalu berusaha untuk memberikan harga yang terjangkau, layanan yang cepat dan mudah, serta layanan yang ramah dan profesional. <br><br>Visi MyIsekai adalah menjadi penyedia layanan voucher internet yang terpercaya dan berkualitas.</p>
+                            <p>MyIsekai berkomitmen untuk memberikan pelayanan yang terbaik kepada pelanggan. Kami selalu berusaha untuk memberikan harga yang terjangkau, layanan yang cepat dan mudah, serta layanan yang ramah dan profesional. <br><br>Visi MyIsekai adalah menjadi penyedia layanan token listrik, pulsa, dan voucher internet yang terpercaya dan berkualitas.</p>
                         </div>
-
                     </div>
                 </section>
             </section>
@@ -100,5 +93,24 @@
                 </div>
             </section>
         </div>
+        <script>
+            const body = document.body,
+            scrollWrap = document.getElementsByClassName("smooth-vanilla")[0],
+            height = scrollWrap.getBoundingClientRect().height -1,
+            speed = 0.04;
+
+            var offset = 0;
+            body.style.height = Math.floor(height) + "px";
+            function smoothScroll() {
+                offset += (window.pageYOffset - offset) * speed;
+
+                var scroll = "translateY(-" + offset + "px) translateZ(0)";
+                scrollWrap.style.transform = scroll;
+
+                callScroll = requestAnimationFrame(smoothScroll);
+            }
+
+            smoothScroll();
+        </script>
     </body>
 </html>
